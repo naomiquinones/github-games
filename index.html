@@ -11,8 +11,8 @@
     #menu p   { margin: 0.5em 0; text-align: center; }
     #menu p a { text-decoration: none; color: black; }
     #upcoming { display: block; margin: 0 auto; background-color: #E0E0E0; }
-    #score    { color: blue; font-weight: bold; vertical-align: middle; }
-    #rows     { color: blue; font-weight: bold; vertical-align: middle; }
+    #score    { color: rgb(0, 82, 189); font-weight: bold; vertical-align: middle; }
+    #rows     { color: rgb(0, 121, 219); font-weight: bold; vertical-align: middle; }
     #stats    { position: absolute; bottom: 0em; right: 1em; }
     @media screen and (min-width:   0px) and (min-height:   0px)  { #tetris { font-size: 0.75em; width: 250px; } #menu { width: 100px; height: 200px; } #upcoming { width:  50px; height:  50px; } #canvas { width: 100px; height: 200px; } } /* 10px chunks */
     @media screen and (min-width: 400px) and (min-height: 400px)  { #tetris { font-size: 1.00em; width: 350px; } #menu { width: 150px; height: 300px; } #upcoming { width:  75px; height:  75px; } #canvas { width: 150px; height: 300px; } } /* 15px chunks */
@@ -113,13 +113,13 @@
     //
     //-------------------------------------------------------------------------
 
-    var i = { size: 4, blocks: [0x0F00, 0x2222, 0x00F0, 0x4444], color: 'blue'   };
-    var j = { size: 3, blocks: [0x44C0, 0x8E00, 0x6440, 0x0E20], color: 'yellow'   };
-    var l = { size: 3, blocks: [0x4460, 0x0E80, 0xC440, 0x2E00], color: 'pink' };
-    var o = { size: 2, blocks: [0xCC00, 0xCC00, 0xCC00, 0xCC00], color: 'red' };
-    var s = { size: 3, blocks: [0x06C0, 0x8C40, 0x6C00, 0x4620], color: 'green'  };
-    var t = { size: 3, blocks: [0x0E40, 0x4C40, 0x4E00, 0x4640], color: 'orange' };
-    var z = { size: 3, blocks: [0x0C60, 0x4C80, 0xC600, 0x2640], color: 'purple'    };
+    var i = { size: 4, blocks: [0x0F00, 0x2222, 0x00F0, 0x4444], color: '#ccddff'   };
+    var j = { size: 3, blocks: [0x44C0, 0x8E00, 0x6440, 0x0E20], color: '#ffef99'   };
+    var l = { size: 3, blocks: [0x4460, 0x0E80, 0xC440, 0x2E00], color: '#ee44dd' };
+    var o = { size: 2, blocks: [0xCC00, 0xCC00, 0xCC00, 0xCC00], color: '#dd110f' };
+    var s = { size: 3, blocks: [0x06C0, 0x8C40, 0x6C00, 0x4620], color: '#22ff88'  };
+    var t = { size: 3, blocks: [0x0E40, 0x4C40, 0x4E00, 0x4640], color: '#ff9900' };
+    var z = { size: 3, blocks: [0x0C60, 0x4C80, 0xC600, 0x2640], color: '#dd00cc'    };
 
     //------------------------------------------------
     // do the bit manipulation and iterate through each
